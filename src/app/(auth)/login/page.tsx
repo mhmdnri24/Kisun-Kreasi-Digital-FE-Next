@@ -18,8 +18,7 @@ export default function LoginPage() {
         setForm({ ...form, [e.target.name]: e.target.value });
         setErrors({ ...errors, [e.target.name]: "" });
     };
-
-    //   function untuk validasi form
+ 
     const validate = () => {
         const newErrors: { username?: string; password?: string } = {};
 

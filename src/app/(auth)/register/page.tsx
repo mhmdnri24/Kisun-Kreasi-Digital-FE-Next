@@ -6,8 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Link from "next/link";
 import { regisProcess } from "@/services/auth";
-// import { registerProcess } from "@/services/auth"; // Uncomment and implement this function
-
+ 
 export default function RegisterPage() {
     const router = useRouter();
     const [form, setForm] = useState({ username: "", email: "", password: "" });
