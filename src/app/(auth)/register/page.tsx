@@ -46,8 +46,7 @@ export default function RegisterPage() {
     } else {
       setErrors({ password: message || "Registration failed" });
     }
-  } catch (error: any) {
-    // kalau pakai axios
+  } catch (error: any) { 
     const backendMessage =
       error.response?.data?.message || "Registration failed";
     setErrors({ password: backendMessage });
